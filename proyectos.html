@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos - Enrique Manzanas</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Header -->
     <header>
         <div class="header container">
             <h1 class="logo">Enrique Manzanas</h1>
             <h2>Técnico Informático</h2>
-            <p><em>"Que mis conocimientos ayuden a la gente que lo necesita, es mi motivacion"</em></p>
+            <p><em>"Que mis conocimientos ayuden a la gente que lo necesita, es mi motivación"</em></p>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
@@ -21,75 +23,153 @@
                     <li><a href="experiencia.html">Experiencia</a></li>
                     <li><a href="formacion.html">Formación</a></li>
                     <li><a href="proyectos.html">Proyectos</a></li>
-                </ul>    
+                </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Proyectos Personales -->
+
+        <!-- PROYECTOS PERSONALES -->
         <section id="proyectos-personales" class="section">
             <div class="container">
                 <h2>Proyectos Personales</h2>
 
-                <div class="project">
-                    <h3>Gaming</h3>
-                    <p>Diseño y recomendación de configuraciones gaming según presupuesto y necesidades.</p>
-                    <p>Asesoramiento en periféricos para mejor experiencia del usuario.</p>
-                    <div class="tags">
-                        <span>Asus</span>
-                        <span>Nvidia</span>
-                        <span>MSI</span>
-                        <span>Corsair</span>
-                        <span>AMD</span>
-                        <span>Intel</span>
-                    </div>
-                </div>
+                <div class="personal-cards-grid">
 
-                <div class="project">
-                    <h3>Máquina Arcade</h3>
-                    <p>Construcción de máquina arcade con componentes Intel Celeron, DDR2 y otros.</p>
-                    <p>Instalación y configuración de emulador.</p>
-                    <div class="tags">
-                        <span>Intel</span>
-                        <span>Emuladores</span>
+                    <div class="personal-card">
+                        <div class="personal-card-label">Proyecto personal</div>
+                        <h3>Gaming</h3>
+                        <p>Diseño y recomendación de configuraciones gaming según presupuesto y necesidades.</p>
+                        <p>Asesoramiento en periféricos para mejor experiencia del usuario.</p>
+                        <div class="flip-divider"></div>
+                        <div class="flip-tags">
+                            <span class="flip-tag">Asus</span>
+                            <span class="flip-tag">Nvidia</span>
+                            <span class="flip-tag">MSI</span>
+                            <span class="flip-tag">Corsair</span>
+                            <span class="flip-tag">AMD</span>
+                            <span class="flip-tag">Intel</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="project">
-                    <h3>Servidor Casero</h3>
-                    <p>Creación de primer servidor casero (homelab) con Ubuntu Server.</p>
-                    <div class="tags">
-                        <span>Ubuntu Server</span>
+                    <div class="personal-card">
+                        <div class="personal-card-label">Proyecto personal</div>
+                        <h3>Máquina Arcade</h3>
+                        <p>Construcción de máquina arcade con componentes Intel Celeron, DDR2 y otros.</p>
+                        <p>Instalación y configuración de emulador.</p>
+                        <div class="flip-divider"></div>
+                        <div class="flip-tags">
+                            <span class="flip-tag">Intel</span>
+                            <span class="flip-tag">Emuladores</span>
+                        </div>
                     </div>
+
+                    <div class="personal-card">
+                        <div class="personal-card-label">Proyecto personal</div>
+                        <h3>Servidor Casero</h3>
+                        <p>Creación de primer servidor casero (homelab) con Ubuntu Server.</p>
+                        <div class="flip-divider"></div>
+                        <div class="flip-tags">
+                            <span class="flip-tag">Ubuntu Server</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="Proyectos de desarrollo" class="section">
+        <!-- PROYECTOS DE DESARROLLO -->
+        <section id="proyectos-desarrollo" class="section">
             <div class="container">
-                <h2>Proyectos de desarrollo</h2>
+                <h2>Proyectos de Desarrollo</h2>
 
-                <div class="project">
-                    <h3>Portfolio personal</h3>
-                    <p>Primer contacto con el diseño web.</p>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
+                <div class="cards-flip-grid">
+
+                    <!-- CARD: Portfolio personal -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+
+                            <div class="flip-face flip-back">
+                                <div class="flip-back-stripe"></div>
+                                <div class="flip-back-body">
+                                    <div class="flip-back-top">
+                                        <div class="flip-back-label">Proyecto de desarrollo</div>
+                                        <div class="flip-back-title">Portfolio<br>personal</div>
+                                        <div class="flip-back-desc">Primer contacto con el diseño web. Maquetación y estilos desde cero.</div>
+                                    </div>
+                                    <div>
+                                        <div class="flip-divider"></div>
+                                        <div class="flip-tags">
+                                            <span class="flip-tag">HTML</span>
+                                            <span class="flip-tag">CSS</span>
+                                        </div>
+                                        <div class="flip-hint">Pasa el cursor →</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-face flip-front">
+                                <div class="flip-front-bar">
+                                    <div class="flip-front-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <span class="flip-front-name">Portfolio personal</span>
+                                </div>
+                                <div class="flip-screenshot">
+                                    <img src="img/Portfolio-practica.png" alt="Portfolio personal">
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+
+                    <!-- CARD: Web Cafeteria -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+
+                            <div class="flip-face flip-back">
+                                <div class="flip-back-stripe"></div>
+                                <div class="flip-back-body">
+                                    <div class="flip-back-top">
+                                        <div class="flip-back-label">Proyecto de desarrollo</div>
+                                        <div class="flip-back-title">Web<br>Cafeteria</div>
+                                        <div class="flip-back-desc">Segunda práctica de diseño web. Estructura y estilos de un sitio real.</div>
+                                    </div>
+                                    <div>
+                                        <div class="flip-divider"></div>
+                                        <div class="flip-tags">
+                                            <span class="flip-tag">HTML</span>
+                                            <span class="flip-tag">CSS</span>
+                                        </div>
+                                        <div class="flip-hint">Pasa el cursor →</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-face flip-front">
+                                <div class="flip-front-bar">
+                                    <div class="flip-front-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <span class="flip-front-name">Web Cafeteria</span>
+                                </div>
+                                <div class="flip-screenshot">
+                                    <img src="img/cafeteria-web-practica.png" alt="Web Cafeteria">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="project">
-                    <h3>Web Cafeteria</h3>
-                    <p>Segunda practica de diseño web</p>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                </div>
+                <p class="section-hint">✦ Pasa el cursor sobre las cartas para ver las capturas ✦</p>
             </div>
-
         </section>
+
     </main>
+
+    <script src="scripts/proyectos.js"></script>
 </body>
 </html>
