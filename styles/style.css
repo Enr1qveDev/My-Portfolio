@@ -32,21 +32,21 @@ header {
 }
 
 header p {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     max-width: 700px;
     margin: 10px auto;
     color: white !important;
 }
 
 header h2 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: normal;
     margin-bottom: 15px;
     color: white !important;
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 4.5rem;
     margin-bottom: 10px;
     color: white !important;
 }
@@ -196,14 +196,14 @@ nav {
 }
 
 .about-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #fff;
     font-weight: 700;
     margin-bottom: 14px;
 }
 
 .about-card p {
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.55);
     line-height: 1.7;
     margin-bottom: 10px;
@@ -273,7 +273,7 @@ nav {
 
 .item h3 {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 8px;
 }
 
@@ -456,7 +456,7 @@ nav {
 }
 
 .flip-back-desc {
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.55);
     line-height: 1.65;
 }
@@ -671,14 +671,14 @@ nav {
 }
 
 .personal-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #fff;
     font-weight: 700;
     margin-bottom: 12px;
 }
 
 .personal-card p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.65;
     margin-bottom: 6px;
@@ -730,7 +730,7 @@ nav {
 
 @media (max-width: 560px) {
     .logo {
-        font-size: 1.5rem;
+        font-size: 3.2rem;
     }
 
     .nav-links {
