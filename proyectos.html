@@ -12,15 +12,30 @@
             <h1 class="logo">Enrique Manzanas</h1>
             <h2>Técnico Informático</h2>
             <p><em>"Que mis conocimientos ayuden a la gente que lo necesita, es mi motivacion"</em></p>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                    <li><a href="habilidades.html">Habilidades</a></li>
-                    <li><a href="experiencia.html">Experiencia</a></li>
-                    <li><a href="formacion.html">Formación</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                </ul>
+            <div class="header-controls">
+                <button id="themeBtn" class="control-btn theme-btn" type="button" onclick="toggleTheme()" aria-label="Cambiar tema" title="Cambiar tema">
+                    <span id="themeIcon" aria-hidden="true">🌙</span>
+                </button>
+                <button id="menuBtn" class="control-btn menu-btn" type="button" onclick="toggleMenu()" aria-controls="navDropdown" aria-expanded="false" aria-label="Abrir menu" title="Abrir menu">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+            <nav id="navDropdown" class="nav-dropdown" aria-label="Menu principal">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html">Sobre mi</a>
+                <a href="habilidades.html">Habilidades</a>
+                <a href="experiencia.html">Experiencia</a>
+                <div class="nav-submenu" id="moreMenuGroup">
+                    <button id="moreMenuBtn" class="nav-submenu-toggle" type="button" onclick="toggleMoreMenu()" aria-expanded="false" aria-controls="moreSubmenu">
+                        Más sobre mí
+                    </button>
+                    <div id="moreSubmenu" class="nav-submenu-panel">
+                        <a href="formacion.html">Formacion</a>
+                        <a href="proyectos.html">Proyectos</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -95,7 +110,7 @@
                         <div class="card-label">Web</div>
                         <h3>Web Cafetería</h3>
                         <hr class="card-divider">
-                        <p>Segunda práctica de diseño web. Desarrollo de sitio web para una cafetería.</p>
+                        <p>Segunda práctica de diseño web. Desarrollo practico web de una cafeteria.</p>
                         <div class="badges">
                             <span class="badge">HTML</span>
                             <span class="badge">CSS</span>
@@ -106,5 +121,16 @@
             </div>
         </section>
     </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Enrique Manzanas</p>
+        </div>
+    </footer>
+    <a class="contact-mail-btn" href="mailto:enriquemanz.1991@gmail.com?subject=Contacto%20desde%20portfolio" aria-label="Contactar por correo" title="Contactar por correo"><span aria-hidden="true">✉</span></a>
+    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver arriba" title="Volver arriba"><span aria-hidden="true">↑</span></button>
+
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/scroll-top.js"></script>
 </body>
 </html>
