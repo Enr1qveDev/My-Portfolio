@@ -1,4 +1,4 @@
-// Menu hamburguesa compartido en todas las paginas
+﻿// Menu hamburguesa compartido en todas las paginas
 (function () {
     function getElements() {
         return {
@@ -10,12 +10,28 @@
         };
     }
 
+    function syncMenuA11y(isOpen) {
+        const { button } = getElements();
+        if (!button) return;
+        const label = isOpen ? "Cerrar menu principal" : "Abrir menu principal";
+        button.setAttribute("aria-label", label);
+        button.setAttribute("title", label);
+    }
+
+    function syncMoreMenuA11y(isOpen) {
+        const { moreButton } = getElements();
+        if (!moreButton) return;
+        const label = isOpen ? "Cerrar submenu Mas sobre mi" : "Abrir submenu Mas sobre mi";
+        moreButton.setAttribute("aria-label", label);
+    }
+
     function closeMoreMenu() {
         const { moreGroup, moreButton, moreSubmenu } = getElements();
         if (!moreGroup || !moreButton || !moreSubmenu) return;
         moreGroup.classList.remove("open");
         moreSubmenu.classList.remove("open");
         moreButton.setAttribute("aria-expanded", "false");
+        syncMoreMenuA11y(false);
     }
 
     function closeMenu() {
@@ -25,6 +41,7 @@
         button.setAttribute("aria-expanded", "false");
         dropdown.classList.remove("open");
         closeMoreMenu();
+        syncMenuA11y(false);
     }
 
     function toggleMenu() {
@@ -37,6 +54,7 @@
         if (!isOpen) {
             closeMoreMenu();
         }
+        syncMenuA11y(isOpen);
     }
 
     function toggleMoreMenu() {
@@ -46,6 +64,7 @@
         const isOpen = moreGroup.classList.toggle("open");
         moreSubmenu.classList.toggle("open", isOpen);
         moreButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        syncMoreMenuA11y(isOpen);
     }
 
     document.addEventListener("click", function (event) {
@@ -69,6 +88,13 @@
         }
     });
 
-    window.toggleMenu = toggleMenu;
-    window.toggleMoreMenu = toggleMoreMenu;
+    const { button, moreButton } = getElements();
+    if (button) {
+        button.addEventListener("click", toggleMenu);
+        syncMenuA11y(false);
+    }
+    if (moreButton) {
+        moreButton.addEventListener("click", toggleMoreMenu);
+        syncMoreMenuA11y(false);
+    }
 })();

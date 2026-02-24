@@ -1,22 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mí - Enrique Manzanas</title>
+    <title>Sobre Mi | Enrique Manzanas</title>
+    <meta name="description" content="Perfil profesional de Enrique Manzanas, tecnico IT con experiencia en soporte, CPD, servidores, switches e infraestructura.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Portfolio de Enrique Manzanas">
+    <meta property="og:title" content="Sobre Mi | Enrique Manzanas">
+    <meta property="og:description" content="Perfil profesional de Enrique Manzanas, tecnico IT con experiencia en soporte, CPD, servidores, switches e infraestructura.">
+    <meta property="og:url" content="https://enr1qvedev.github.io/My-Portfolio/sobre-mi.html">
+    <meta property="og:image" content="https://enr1qvedev.github.io/My-Portfolio/img/Portfolio-practica.png">
+    <meta property="og:image:alt" content="Vista previa del portfolio de Enrique Manzanas">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://enr1qvedev.github.io/My-Portfolio/sobre-mi.html">
+    <link rel="icon" type="image/png" href="img/Portfolio-practica.png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
     <header>
         <div class="header container">
             <h1 class="logo">Enrique Manzanas</h1>
-            <h2>Técnico Informático</h2>
+            <h2>Tecnico Informatico</h2>
             <p><em>"Que mis conocimientos ayuden a la gente que lo necesita, es mi motivacion"</em></p>
             <div class="header-controls">
-                <button id="themeBtn" class="control-btn theme-btn" type="button" onclick="toggleTheme()" aria-label="Cambiar tema" title="Cambiar tema">
-                    <span id="themeIcon" aria-hidden="true">🌙</span>
+                <button id="themeBtn" class="control-btn theme-btn" type="button" aria-label="Cambiar a modo claro u oscuro" title="Cambiar tema">
+                    <span id="themeIcon" aria-hidden="true">&#x1F319;</span>
                 </button>
-                <button id="menuBtn" class="control-btn menu-btn" type="button" onclick="toggleMenu()" aria-controls="navDropdown" aria-expanded="false" aria-label="Abrir menu" title="Abrir menu">
+                <button id="menuBtn" class="control-btn menu-btn" type="button" aria-controls="navDropdown" aria-expanded="false" aria-label="Abrir menu principal" title="Abrir menu principal">
                     <span class="menu-line"></span>
                     <span class="menu-line"></span>
                     <span class="menu-line"></span>
@@ -28,8 +42,8 @@
                 <a href="habilidades.html">Habilidades</a>
                 <a href="experiencia.html">Experiencia</a>
                 <div class="nav-submenu" id="moreMenuGroup">
-                    <button id="moreMenuBtn" class="nav-submenu-toggle" type="button" onclick="toggleMoreMenu()" aria-expanded="false" aria-controls="moreSubmenu">
-                        Más sobre mí
+                    <button id="moreMenuBtn" class="nav-submenu-toggle" type="button" aria-expanded="false" aria-controls="moreSubmenu" aria-label="Abrir submenu Mas sobre mi">
+                        Mas sobre mi
                     </button>
                     <div id="moreSubmenu" class="nav-submenu-panel">
                         <a href="formacion.html">Formacion</a>
@@ -40,24 +54,24 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="sobre-mi" class="section">
             <div class="container">
-                <h2>Sobre Mí</h2>
+                <h2>Sobre Mi</h2>
 
                 <!-- Fotos arriba -->
                 <div class="about-photos-row">
-                    <img src="img/Instalacion.jpg" alt="Foto de perfil" class="profile-img">
-                    <img src="img/foto-configurando.jpg" alt="En el trabajo" class="work-img-side">
+                    <img src="img/Instalacion.jpg" alt="Enrique Manzanas realizando una instalacion de infraestructura IT" class="profile-img" width="250" height="250" loading="lazy" decoding="async">
+                    <img src="img/foto-configurando.jpg" alt="Enrique Manzanas configurando equipos en entorno profesional" class="work-img-side" width="250" height="250" loading="lazy" decoding="async">
                 </div>
 
                 <!-- Card de texto debajo -->
                 <div class="about-card">
                     <div class="card-label">Perfil Profesional</div>
                     <hr class="card-divider">
-                    <p>Soy Técnico Informático con experiencia en instalación, configuración y mantenimiento de infraestructura IT.</p>
-                    <p>Especializado en equipos de sobremesa y portátiles, me enfoco en garantizar la estabilidad y correcto funcionamiento de los sistemas.</p>
-                    <p>He participado en la instalación, mantenimiento y actualización de infraestructuras IT en entornos de Centros de Procesamiento de Datos (CPD), gestionando hardware y software en servidores y switches, garantizando la operatividad y estabilidad de los sistemas.</p>
+                    <p>Soy Tecnico Informatico con experiencia en instalacion, configuracion y mantenimiento de infraestructura IT.</p>
+                    <p>Especializado en equipos de sobremesa y portatiles, me enfoco en garantizar la estabilidad y correcto funcionamiento de los sistemas.</p>
+                    <p>He participado en la instalacion, mantenimiento y actualizacion de infraestructuras IT en entornos de Centros de Procesamiento de Datos (CPD), gestionando hardware y software en servidores y switches, garantizando la operatividad y estabilidad de los sistemas.</p>
                     <p>Siempre buscando nuevas oportunidades para aprender y crecer profesionalmente.</p>
                     <div class="badges">
                         <span class="badge">Infraestructura IT</span>
@@ -72,14 +86,17 @@
     </main>
     <footer class="site-footer">
         <div class="container">
-            <p>© 2026 Enrique Manzanas</p>
+            <p>(c) 2026 Enrique Manzanas</p>
         </div>
     </footer>
-    <a class="contact-mail-btn" href="mailto:enriquemanz.1991@gmail.com?subject=Contacto%20desde%20portfolio" aria-label="Contactar por correo" title="Contactar por correo"><span aria-hidden="true">✉</span></a>
-    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver arriba" title="Volver arriba"><span aria-hidden="true">↑</span></button>
+    <a class="contact-mail-btn" href="mailto:enriquemanz.1991@gmail.com?subject=Contacto%20desde%20portfolio" aria-label="Enviar correo a Enrique Manzanas" title="Enviar correo"><span aria-hidden="true">&#9993;</span></a>
+    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver al inicio de la pagina" title="Volver arriba"><span aria-hidden="true">&#8593;</span></button>
 
-    <script src="scripts/theme.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/scroll-top.js"></script>
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/scroll-top.js" defer></script>
 </body>
 </html>
+
+
+

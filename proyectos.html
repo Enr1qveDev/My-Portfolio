@@ -1,22 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos - Enrique Manzanas</title>
+    <title>Proyectos | Enrique Manzanas</title>
+    <meta name="description" content="Proyectos personales y de desarrollo de Enrique Manzanas, enfocados en hardware, homelab, HTML y CSS.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Portfolio de Enrique Manzanas">
+    <meta property="og:title" content="Proyectos | Enrique Manzanas">
+    <meta property="og:description" content="Proyectos personales y de desarrollo de Enrique Manzanas, enfocados en hardware, homelab, HTML y CSS.">
+    <meta property="og:url" content="https://enr1qvedev.github.io/My-Portfolio/proyectos.html">
+    <meta property="og:image" content="https://enr1qvedev.github.io/My-Portfolio/img/Portfolio-practica.png">
+    <meta property="og:image:alt" content="Vista previa del portfolio de Enrique Manzanas">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://enr1qvedev.github.io/My-Portfolio/proyectos.html">
+    <link rel="icon" type="image/png" href="img/Portfolio-practica.png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
     <header>
         <div class="header container">
             <h1 class="logo">Enrique Manzanas</h1>
-            <h2>Técnico Informático</h2>
+            <h2>Tecnico Informatico</h2>
             <p><em>"Que mis conocimientos ayuden a la gente que lo necesita, es mi motivacion"</em></p>
             <div class="header-controls">
-                <button id="themeBtn" class="control-btn theme-btn" type="button" onclick="toggleTheme()" aria-label="Cambiar tema" title="Cambiar tema">
-                    <span id="themeIcon" aria-hidden="true">🌙</span>
+                <button id="themeBtn" class="control-btn theme-btn" type="button" aria-label="Cambiar a modo claro u oscuro" title="Cambiar tema">
+                    <span id="themeIcon" aria-hidden="true">&#x1F319;</span>
                 </button>
-                <button id="menuBtn" class="control-btn menu-btn" type="button" onclick="toggleMenu()" aria-controls="navDropdown" aria-expanded="false" aria-label="Abrir menu" title="Abrir menu">
+                <button id="menuBtn" class="control-btn menu-btn" type="button" aria-controls="navDropdown" aria-expanded="false" aria-label="Abrir menu principal" title="Abrir menu principal">
                     <span class="menu-line"></span>
                     <span class="menu-line"></span>
                     <span class="menu-line"></span>
@@ -28,8 +42,8 @@
                 <a href="habilidades.html">Habilidades</a>
                 <a href="experiencia.html">Experiencia</a>
                 <div class="nav-submenu" id="moreMenuGroup">
-                    <button id="moreMenuBtn" class="nav-submenu-toggle" type="button" onclick="toggleMoreMenu()" aria-expanded="false" aria-controls="moreSubmenu">
-                        Más sobre mí
+                    <button id="moreMenuBtn" class="nav-submenu-toggle" type="button" aria-expanded="false" aria-controls="moreSubmenu" aria-label="Abrir submenu Mas sobre mi">
+                        Mas sobre mi
                     </button>
                     <div id="moreSubmenu" class="nav-submenu-panel">
                         <a href="formacion.html">Formacion</a>
@@ -40,7 +54,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Proyectos Personales -->
         <section id="proyectos-personales" class="section">
             <div class="container">
@@ -51,8 +65,8 @@
                         <div class="card-label">Hardware</div>
                         <h3>Gaming</h3>
                         <hr class="card-divider">
-                        <p>Diseño y recomendación de configuraciones gaming según presupuesto y necesidades.</p>
-                        <p>Asesoramiento en periféricos para mejor experiencia del usuario.</p>
+                        <p>Diseno y recomendacion de configuraciones gaming segun presupuesto y necesidades.</p>
+                        <p>Asesoramiento en perifericos para mejor experiencia del usuario.</p>
                         <div class="badges">
                             <span class="badge">Asus</span>
                             <span class="badge">Nvidia</span>
@@ -65,10 +79,10 @@
 
                     <div class="pro-card">
                         <div class="card-label">DIY</div>
-                        <h3>Máquina Arcade</h3>
+                        <h3>Maquina Arcade</h3>
                         <hr class="card-divider">
-                        <p>Construcción de máquina arcade con componentes Intel Celeron, DDR2 y otros.</p>
-                        <p>Instalación y configuración de emulador.</p>
+                        <p>Construccion de maquina arcade con componentes Intel Celeron, DDR2 y otros.</p>
+                        <p>Instalacion y configuracion de emulador.</p>
                         <div class="badges">
                             <span class="badge">Intel</span>
                             <span class="badge">Emuladores</span>
@@ -79,7 +93,7 @@
                         <div class="card-label">Infraestructura</div>
                         <h3>Servidor Casero</h3>
                         <hr class="card-divider">
-                        <p>Creación de primer servidor casero (homelab) con Ubuntu Server.</p>
+                        <p>Creacion de primer servidor casero (homelab) con Ubuntu Server.</p>
                         <div class="badges">
                             <span class="badge">Ubuntu Server</span>
                         </div>
@@ -99,7 +113,7 @@
                         <div class="card-label">Web</div>
                         <h3>Portfolio Personal</h3>
                         <hr class="card-divider">
-                        <p>Primer contacto con el diseño web. Creación de portfolio personal desde cero.</p>
+                        <p>Primer contacto con el diseno web. Creacion de portfolio personal desde cero.</p>
                         <div class="badges">
                             <span class="badge">HTML</span>
                             <span class="badge">CSS</span>
@@ -108,9 +122,9 @@
 
                     <div class="pro-card">
                         <div class="card-label">Web</div>
-                        <h3>Web Cafetería</h3>
+                        <h3>Web Cafeteria</h3>
                         <hr class="card-divider">
-                        <p>Segunda práctica de diseño web. Desarrollo practico web de una cafeteria.</p>
+                        <p>Segunda practica de diseno web. Desarrollo practico web de una cafeteria.</p>
                         <div class="badges">
                             <span class="badge">HTML</span>
                             <span class="badge">CSS</span>
@@ -123,14 +137,17 @@
     </main>
     <footer class="site-footer">
         <div class="container">
-            <p>© 2026 Enrique Manzanas</p>
+            <p>(c) 2026 Enrique Manzanas</p>
         </div>
     </footer>
-    <a class="contact-mail-btn" href="mailto:enriquemanz.1991@gmail.com?subject=Contacto%20desde%20portfolio" aria-label="Contactar por correo" title="Contactar por correo"><span aria-hidden="true">✉</span></a>
-    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver arriba" title="Volver arriba"><span aria-hidden="true">↑</span></button>
+    <a class="contact-mail-btn" href="mailto:enriquemanz.1991@gmail.com?subject=Contacto%20desde%20portfolio" aria-label="Enviar correo a Enrique Manzanas" title="Enviar correo"><span aria-hidden="true">&#9993;</span></a>
+    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver al inicio de la pagina" title="Volver arriba"><span aria-hidden="true">&#8593;</span></button>
 
-    <script src="scripts/theme.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/scroll-top.js"></script>
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/scroll-top.js" defer></script>
 </body>
 </html>
+
+
+

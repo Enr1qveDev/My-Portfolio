@@ -1,22 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiencia - Enrique Manzanas</title>
+    <title>Experiencia | Enrique Manzanas</title>
+    <meta name="description" content="Experiencia profesional de Enrique Manzanas en soporte tecnico, despliegues de infraestructura y proyectos en centros de datos.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Portfolio de Enrique Manzanas">
+    <meta property="og:title" content="Experiencia | Enrique Manzanas">
+    <meta property="og:description" content="Experiencia profesional de Enrique Manzanas en soporte tecnico, despliegues de infraestructura y proyectos en centros de datos.">
+    <meta property="og:url" content="https://enr1qvedev.github.io/My-Portfolio/experiencia.html">
+    <meta property="og:image" content="https://enr1qvedev.github.io/My-Portfolio/img/Portfolio-practica.png">
+    <meta property="og:image:alt" content="Vista previa del portfolio de Enrique Manzanas">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://enr1qvedev.github.io/My-Portfolio/experiencia.html">
+    <link rel="icon" type="image/png" href="img/Portfolio-practica.png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
     <header>
         <div class="header container">
             <h1 class="logo">Enrique Manzanas</h1>
-            <h2>Técnico Informático</h2>
+            <h2>Tecnico Informatico</h2>
             <p><em>"Que mis conocimientos ayuden a la gente que lo necesita, es mi motivacion"</em></p>
             <div class="header-controls">
-                <button id="themeBtn" class="control-btn theme-btn" type="button" onclick="toggleTheme()" aria-label="Cambiar tema" title="Cambiar tema">
-                    <span id="themeIcon" aria-hidden="true">🌙</span>
+                <button id="themeBtn" class="control-btn theme-btn" type="button" aria-label="Cambiar a modo claro u oscuro" title="Cambiar tema">
+                    <span id="themeIcon" aria-hidden="true">&#x1F319;</span>
                 </button>
-                <button id="menuBtn" class="control-btn menu-btn" type="button" onclick="toggleMenu()" aria-controls="navDropdown" aria-expanded="false" aria-label="Abrir menu" title="Abrir menu">
+                <button id="menuBtn" class="control-btn menu-btn" type="button" aria-controls="navDropdown" aria-expanded="false" aria-label="Abrir menu principal" title="Abrir menu principal">
                     <span class="menu-line"></span>
                     <span class="menu-line"></span>
                     <span class="menu-line"></span>
@@ -28,8 +42,8 @@
                 <a href="habilidades.html">Habilidades</a>
                 <a href="experiencia.html">Experiencia</a>
                 <div class="nav-submenu" id="moreMenuGroup">
-                    <button id="moreMenuBtn" class="nav-submenu-toggle" type="button" onclick="toggleMoreMenu()" aria-expanded="false" aria-controls="moreSubmenu">
-                        Más sobre mí
+                    <button id="moreMenuBtn" class="nav-submenu-toggle" type="button" aria-expanded="false" aria-controls="moreSubmenu" aria-label="Abrir submenu Mas sobre mi">
+                        Mas sobre mi
                     </button>
                     <div id="moreSubmenu" class="nav-submenu-panel">
                         <a href="formacion.html">Formacion</a>
@@ -40,7 +54,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Experiencia laboral -->
         <section id="experiencia" class="section">
             <div class="container">
@@ -48,11 +62,11 @@
 
                 <div class="exp-card">
                     <div class="card-label">Empleo</div>
-                    <h3>Técnico de Soporte</h3>
-                    <p class="period">Stortrec S.L &bull; 2024 – 2025</p>
+                    <h3>Tecnico de Soporte</h3>
+                    <p class="period">Stortrec S.L &bull; 2024 ?" 2025</p>
                     <hr class="card-divider">
-                    <p>Instalación, mantenimiento y actualización de infraestructura IT.
-                       Gestión de hardware y software en servidores y switches para
+                    <p>Instalacion, mantenimiento y actualizacion de infraestructura IT.
+                       Gestion de hardware y software en servidores y switches para
                        Centros de Procesamiento de Datos.</p>
                     <div class="badges">
                         <span class="badge">Servidores</span>
@@ -73,8 +87,8 @@
                         <div class="card-label">Infraestructura</div>
                         <h3>Centro de Datos Fortinet</h3>
                         <hr class="card-divider">
-                        <p>Instalación inicial de infraestructura Fortinet (Switches, Firewalls, etc.).</p>
-                        <p>Instalación de equipos SuperMicro y DELL.</p>
+                        <p>Instalacion inicial de infraestructura Fortinet (Switches, Firewalls, etc.).</p>
+                        <p>Instalacion de equipos SuperMicro y DELL.</p>
                         <div class="badges">
                             <span class="badge">DELL</span>
                             <span class="badge">Fortinet</span>
@@ -83,10 +97,10 @@
                     </div>
 
                     <div class="pro-card">
-                        <div class="card-label">Ampliación</div>
-                        <h3>Ampliación de Equipos – Múltiples Clientes</h3>
+                        <div class="card-label">Ampliacion</div>
+                        <h3>Ampliacion de Equipos ?" Multiples Clientes</h3>
                         <hr class="card-divider">
-                        <p>Proyectos de ampliación de infraestructura DELL en:</p>
+                        <p>Proyectos de ampliacion de infraestructura DELL en:</p>
                         <ul class="client-list">
                             <li>Agencia Espacial Europea</li>
                             <li>Centro de Datos Banco Santander</li>
@@ -107,14 +121,17 @@
     </main>
     <footer class="site-footer">
         <div class="container">
-            <p>© 2026 Enrique Manzanas</p>
+            <p>(c) 2026 Enrique Manzanas</p>
         </div>
     </footer>
-    <a class="contact-mail-btn" href="mailto:enriquemanz.1991@gmail.com?subject=Contacto%20desde%20portfolio" aria-label="Contactar por correo" title="Contactar por correo"><span aria-hidden="true">✉</span></a>
-    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver arriba" title="Volver arriba"><span aria-hidden="true">↑</span></button>
+    <a class="contact-mail-btn" href="mailto:enriquemanz.1991@gmail.com?subject=Contacto%20desde%20portfolio" aria-label="Enviar correo a Enrique Manzanas" title="Enviar correo"><span aria-hidden="true">&#9993;</span></a>
+    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver al inicio de la pagina" title="Volver arriba"><span aria-hidden="true">&#8593;</span></button>
 
-    <script src="scripts/theme.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/scroll-top.js"></script>
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/scroll-top.js" defer></script>
 </body>
 </html>
+
+
+

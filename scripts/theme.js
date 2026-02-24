@@ -1,9 +1,10 @@
-// Theme toggle compartido en todas las paginas
+﻿// Theme toggle compartido en todas las paginas
 (function () {
     const root = document.documentElement;
     const storageKey = "theme";
     const prefersLight = window.matchMedia &&
         window.matchMedia("(prefers-color-scheme: light)").matches;
+    const button = document.getElementById("themeBtn");
 
     const saved = localStorage.getItem(storageKey);
     const initialTheme = saved === "light" || saved === "dark"
@@ -22,10 +23,9 @@
         const isDark = theme === "dark";
         const nextLabel = isDark ? "modo claro" : "modo oscuro";
         const icon = document.getElementById("themeIcon");
-        const button = document.getElementById("themeBtn");
 
         if (icon) {
-            icon.textContent = isDark ? "🌙" : "☀️";
+            icon.textContent = isDark ? "\uD83C\uDF19" : "\u2600";
         }
 
         if (button) {
@@ -40,5 +40,7 @@
         applyTheme(next);
     }
 
-    window.toggleTheme = toggleTheme;
+    if (button) {
+        button.addEventListener("click", toggleTheme);
+    }
 })();
