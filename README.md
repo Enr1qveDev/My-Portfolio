@@ -6,5 +6,6 @@ y sobre todo, si pueden acabar sirviendo para ayudar a alguien por muy basica qu
 
 ## ROADMAP UPGRADES: (he decidido añadir este pequeño apartado para ir añadiendo los upgrades que añado al portfolio).
 
-- Rediseño portfolio: tarjetas, flip cards, fotos y capturas de proyectos (ultima actualización).
+- Cambios visuales (ultima actualización).
+- Rediseño portfolio: tarjetas, flip cards, fotos y capturas de proyectos.
 - Actualizar portfolio: separar páginas, añadir fondo y ajustar estilos.
