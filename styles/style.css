@@ -472,6 +472,23 @@ header p em {
     background: var(--accent-soft);
 }
 
+/* Estados de aprendizaje junto a una tecnologia */
+.skill-item {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.badge.learning {
+    background: rgba(255,165,0,0.12);
+    color: #ff9800;
+    border-color: rgba(255,165,0,0.28);
+    text-transform: none;
+    font-weight: 700;
+    padding: 4px 8px;
+    font-size: 0.72rem;
+}
+
 /* Card base compartida */
 .skill-card,
 .pro-card,
